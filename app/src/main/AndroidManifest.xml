@@ -10,6 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ActivityTest">
         <activity
+            android:name=".DailogActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Dialog"/>
+<!--        指定了dialog这一theme属性，指定主题-->
+        <activity
+            android:name=".NormalActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

@@ -3,16 +3,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <Button
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button_1"
-        android:text="Start normal act"/>
+        android:text="This is dialog"/>
+<!--        使用textview以显示文字-->
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/button_2"
-        android:text="Start dialog act"/>
 
 </LinearLayout>
