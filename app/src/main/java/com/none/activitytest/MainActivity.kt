@@ -3,6 +3,7 @@ package com.none.activitytest
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.PersistableBundle
 import android.util.Log
 import com.none.activitytest.databinding.ActivityMainBinding
 
@@ -15,6 +16,13 @@ class MainActivity : AppCompatActivity()
         super.onCreate(savedInstanceState)
         Log.d(tag,"onCreat")
         setContentView(R.layout.activity_main)
+
+//       调用Bundle中的参数
+        if(savedInstanceState!=null)
+        {
+            val tempdata=savedInstanceState.getString("data_key")
+            Log.d("tag",tempdata.toString())
+        }
 
         val binding_1 = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding_1.root)
@@ -71,5 +79,13 @@ class MainActivity : AppCompatActivity()
         Log.d(tag,"onRestart")
     }
 
+    override fun onSaveInstanceState(outState: Bundle)
+    {
+        super.onSaveInstanceState(outState)
+        val tempData="sth you just typed"
+        outState.putString("data_key",tempData)
+//        使用putString保存临时数据，1. 键值用于从Bundle里取值  2.数据
+//        但是没有卵用
+    }
 
 }
