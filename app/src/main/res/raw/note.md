@@ -28,3 +28,6 @@
 (前两个是滑动到任务管理器的时候出现的)
 2021-09-08 13:05:11.326 8368-8368/com.none.activitytest D/MainActivity: onDestroy
 结束任务后出现
+
+测试自己时在哪一个act的方法就是把所有的文件都继承自 个继承自AppCompatActivity()的基类
+打印即可!![img_1.png](img_1.png)

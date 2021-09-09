@@ -7,7 +7,7 @@ import android.os.PersistableBundle
 import android.util.Log
 import com.none.activitytest.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity()
+class MainActivity : BaseActivity()
 {
     private val tag="MainActivity"
 
